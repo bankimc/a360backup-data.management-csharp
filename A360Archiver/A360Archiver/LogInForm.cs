@@ -43,8 +43,6 @@ namespace A360Archiver
             tbxClientId.Text = props.clientId;
             tbxClientSecret.Text = props.clientSecret;
             tbxCallbackUrl.Text = props.callbackUrl;
-
-            btnLogIn_Click(null, null);
         }
 
         public delegate void DelegateCloseDialog();

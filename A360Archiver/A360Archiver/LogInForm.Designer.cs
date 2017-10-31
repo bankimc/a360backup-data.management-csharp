@@ -42,13 +42,13 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // webPanel
+            // webBrowser
             // 
             this.webPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webPanel.Location = new System.Drawing.Point(3, 11);
+            this.webPanel.Location = new System.Drawing.Point(3, 124);
             this.webPanel.MinimumSize = new System.Drawing.Size(20, 20);
             this.webPanel.Name = "webPanel";
-            this.webPanel.Size = new System.Drawing.Size(557, 340);
+            this.webPanel.Size = new System.Drawing.Size(557, 227);
             this.webPanel.TabIndex = 0;
             // 
             // tableLayoutPanel
@@ -61,7 +61,7 @@
             this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 2;
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(563, 354);
             this.tableLayoutPanel.TabIndex = 1;
@@ -78,7 +78,7 @@
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(3, 3);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(557, 2);
+            this.panel.Size = new System.Drawing.Size(557, 115);
             this.panel.TabIndex = 1;
             // 
             // btnLogIn
@@ -88,7 +88,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogIn.Location = new System.Drawing.Point(203, 85);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(131, 0);
+            this.btnLogIn.Size = new System.Drawing.Size(131, 23);
             this.btnLogIn.TabIndex = 6;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = true;
@@ -150,15 +150,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 354);
+            this.ControlBox = true;
             this.Controls.Add(this.tableLayoutPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "LogInForm";
             this.Text = "Log In";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.tableLayoutPanel.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
