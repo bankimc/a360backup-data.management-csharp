@@ -54,20 +54,22 @@
             // 
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer.Name = "splitContainer";
             // 
             // splitContainer.Panel1
             // 
             this.splitContainer.Panel1.Controls.Add(this.treeView);
-            this.splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(3);
+            this.splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer.Panel1MinSize = 100;
             // 
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.tableLayoutPanel);
             this.splitContainer.Panel2MinSize = 300;
-            this.splitContainer.Size = new System.Drawing.Size(757, 442);
-            this.splitContainer.SplitterDistance = 237;
+            this.splitContainer.Size = new System.Drawing.Size(1136, 680);
+            this.splitContainer.SplitterDistance = 355;
+            this.splitContainer.SplitterWidth = 6;
             this.splitContainer.TabIndex = 0;
             // 
             // treeView
@@ -75,10 +77,11 @@
             this.treeView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView.ImageIndex = 0;
             this.treeView.ImageList = this.treeImages;
-            this.treeView.Location = new System.Drawing.Point(3, 3);
+            this.treeView.Location = new System.Drawing.Point(4, 5);
+            this.treeView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.treeView.Name = "treeView";
             this.treeView.SelectedImageIndex = 0;
-            this.treeView.Size = new System.Drawing.Size(231, 436);
+            this.treeView.Size = new System.Drawing.Size(347, 670);
             this.treeView.TabIndex = 0;
             this.treeView.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView_BeforeExpand);
             // 
@@ -95,12 +98,12 @@
             // tableLayoutPanel
             // 
             this.tableLayoutPanel.ColumnCount = 6;
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel.Controls.Add(this.btnClearList, 3, 2);
             this.tableLayoutPanel.Controls.Add(this.btnRetry, 2, 2);
             this.tableLayoutPanel.Controls.Add(this.btnBackup, 1, 2);
@@ -110,20 +113,22 @@
             this.tableLayoutPanel.Controls.Add(this.ltvFiles, 0, 0);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 3;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(516, 442);
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel.Size = new System.Drawing.Size(775, 680);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // btnClearList
             // 
             this.btnClearList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClearList.Location = new System.Drawing.Point(303, 414);
+            this.btnClearList.Location = new System.Drawing.Point(454, 637);
+            this.btnClearList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClearList.Name = "btnClearList";
-            this.btnClearList.Size = new System.Drawing.Size(94, 23);
+            this.btnClearList.Size = new System.Drawing.Size(142, 35);
             this.btnClearList.TabIndex = 6;
             this.btnClearList.Text = "Clear list";
             this.btnClearList.UseVisualStyleBackColor = true;
@@ -132,9 +137,10 @@
             // btnRetry
             // 
             this.btnRetry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRetry.Location = new System.Drawing.Point(203, 414);
+            this.btnRetry.Location = new System.Drawing.Point(304, 637);
+            this.btnRetry.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRetry.Name = "btnRetry";
-            this.btnRetry.Size = new System.Drawing.Size(94, 23);
+            this.btnRetry.Size = new System.Drawing.Size(142, 35);
             this.btnRetry.TabIndex = 5;
             this.btnRetry.Text = "Retry";
             this.btnRetry.UseVisualStyleBackColor = true;
@@ -143,9 +149,10 @@
             // btnBackup
             // 
             this.btnBackup.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBackup.Location = new System.Drawing.Point(103, 414);
+            this.btnBackup.Location = new System.Drawing.Point(154, 637);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(94, 23);
+            this.btnBackup.Size = new System.Drawing.Size(142, 35);
             this.btnBackup.TabIndex = 2;
             this.btnBackup.Text = "Start backup";
             this.btnBackup.UseVisualStyleBackColor = true;
@@ -154,10 +161,10 @@
             // btnBackupFolder
             // 
             this.btnBackupFolder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBackupFolder.Location = new System.Drawing.Point(488, 381);
-            this.btnBackupFolder.Margin = new System.Windows.Forms.Padding(1, 1, 3, 1);
+            this.btnBackupFolder.Location = new System.Drawing.Point(733, 586);
+            this.btnBackupFolder.Margin = new System.Windows.Forms.Padding(2, 2, 4, 2);
             this.btnBackupFolder.Name = "btnBackupFolder";
-            this.btnBackupFolder.Size = new System.Drawing.Size(25, 23);
+            this.btnBackupFolder.Size = new System.Drawing.Size(38, 35);
             this.btnBackupFolder.TabIndex = 3;
             this.btnBackupFolder.Text = "...";
             this.btnBackupFolder.UseVisualStyleBackColor = true;
@@ -167,10 +174,11 @@
             // 
             this.tableLayoutPanel.SetColumnSpan(this.tbxBackupFolder, 4);
             this.tbxBackupFolder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbxBackupFolder.Location = new System.Drawing.Point(103, 383);
+            this.tbxBackupFolder.Location = new System.Drawing.Point(154, 589);
+            this.tbxBackupFolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbxBackupFolder.Name = "tbxBackupFolder";
             this.tbxBackupFolder.ReadOnly = true;
-            this.tbxBackupFolder.Size = new System.Drawing.Size(381, 20);
+            this.tbxBackupFolder.Size = new System.Drawing.Size(573, 26);
             this.tbxBackupFolder.TabIndex = 1;
             this.tbxBackupFolder.Text = "C:\\temp\\A360";
             // 
@@ -178,10 +186,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(3, 380);
+            this.label1.Location = new System.Drawing.Point(4, 584);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 6, 6, 0);
-            this.label1.Size = new System.Drawing.Size(94, 19);
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 9, 9, 0);
+            this.label1.Size = new System.Drawing.Size(142, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Backup folder";
             // 
@@ -194,9 +203,10 @@
             this.ltvFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ltvFiles.FullRowSelect = true;
             this.ltvFiles.GridLines = true;
-            this.ltvFiles.Location = new System.Drawing.Point(3, 3);
+            this.ltvFiles.Location = new System.Drawing.Point(4, 5);
+            this.ltvFiles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ltvFiles.Name = "ltvFiles";
-            this.ltvFiles.Size = new System.Drawing.Size(510, 374);
+            this.ltvFiles.Size = new System.Drawing.Size(767, 574);
             this.ltvFiles.TabIndex = 4;
             this.ltvFiles.UseCompatibleStateImageBehavior = false;
             this.ltvFiles.View = System.Windows.Forms.View.Details;
@@ -212,12 +222,15 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 442);
+            this.ClientSize = new System.Drawing.Size(1136, 680);
             this.Controls.Add(this.splitContainer);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
-            this.Text = "A360 Backup";
+            this.Text = "Fusion Backup";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();

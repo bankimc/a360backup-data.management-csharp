@@ -815,6 +815,11 @@ namespace A360Archiver
                     item.Remove();
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     public class LogInInfo
     {
